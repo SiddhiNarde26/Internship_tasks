@@ -1,0 +1,37 @@
+Project Title: Inventory RESTful API
+
+Description:
+This project is a simple RESTful API built using Flask that manages an inventory list. It supports all CRUD operations: Create, Read, Update, and Delete.
+
+How to Run:
+1. Install Flask using:
+   pip install flask
+
+2. Run the app:
+   python app.py
+
+3. Use Postman to test the following endpoints:
+
+Endpoints:
+
+1. GET /items
+   → Returns all items
+
+2. POST /items
+   Body:
+   {
+     "name": "Pen",
+     "quantity": 10
+   }
+
+3. PUT /items/0
+   Body:
+   {
+     "name": "Pencil",
+     "quantity": 5
+   }
+
+4. DELETE /items/0
+   → Deletes the item at index 0
+
+All endpoints tested using Postman.

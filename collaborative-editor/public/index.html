@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodTech Collaborative Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <div class="logo">
+                <img src="codtech-logo.jpg" alt="CodTech Logo" class="codtech-logo" style="height: 40px; margin-right: 10px; display: inline-block; vertical-align: middle;">
+                <span class="app-title">CodTech Studio</span>
+            </div>
+            <div class="header-actions">
+                <span class="status-message" id="statusMessage">Connecting...</span>
+            </div>
+        </header>
+        <main class="editor-area">
+            <div class="editor-toolbar">
+                <button class="toolbar-button" title="Save (Not implemented yet)">💾</button>
+                <button class="toolbar-button" title="Bold (Styling only)">B</button>
+                <button class="toolbar-button" title="Italic (Styling only)">I</button>
+                <button class="toolbar-button" title="Code (Styling only)">{'}'}</button>
+                <button class="toolbar-button" title="Toggle Theme (Not implemented yet)">🌙</button>
+                <button class="toolbar-button" title="View on GitHub">
+                    <a href="https://github.com" target="_blank" style="color: inherit; text-decoration: none;">
+                        <img src="github-logo.png" alt="GitHub" style="height: 1.2em; vertical-align: middle;"> GitHub
+                    </a>
+                </button>
+            </div>
+            <textarea id="editor" class="code-editor" placeholder="Start coding or taking notes here..."></textarea>
+        </main>
+        <footer class="app-footer">
+            <p>&copy; 2025 CodTech Internship. All rights reserved.</p>
+            <p style="font-size: 0.75em; opacity: 0.7;">Developed with passion.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
